@@ -1,0 +1,92 @@
+.home-container {
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #1c1c2b;
+  min-height: 100vh;
+}
+
+@media (max-width: 767px) {
+  .home-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 575px) {
+  .home-container {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+.logo-and-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.co-win-logo {
+  height: 40px;
+  width: 40px;
+}
+
+.logo-name {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2cc6c6;
+  margin-left: 15px;
+}
+
+.co-win-heading {
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  color: #cbd5e1;
+}
+
+.charts-container {
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.failure-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.failure-view-image {
+  width: 450px;
+  margin-top: 20px;
+}
+
+.failure-text {
+  font-family: Lobster;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+@media (max-width: 575px) {
+  .failure-view-image {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .failure-text {
+    font-family: Lobster;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+  }
+}
