@@ -36,7 +36,7 @@ class CowinDashboard extends Component {
     const apiUrl = 'https://apis.ccbp.in/covid-vaccination-data'
 
     const response = await fetch(apiUrl)
-    if (response.status === 200) {
+    if (response.ok) {
       const data = await response.json()
       console.log(response)
       const formatted7DaysVaccinationData = data.last_7_days_vaccination.map(
@@ -49,7 +49,7 @@ class CowinDashboard extends Component {
         vaccinationByGender: data.vaccination_by_gender,
         apiStatus: apiStatusConstants.success,
       })
-    } else if (response.status !== 200) {
+    } else {
       this.setState({
         apiStatus: apiStatusConstants.failure,
       })

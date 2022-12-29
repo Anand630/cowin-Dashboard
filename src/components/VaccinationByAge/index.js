@@ -7,7 +7,7 @@ const VaccinationByAge = props => {
 
   return (
     <div className="vaccination-by-gender-pie-container">
-      <h1 className="vaccination-by-gender-text">Vaccination by age</h1>
+      <h1 className="vaccination-by-gender-text">Vaccination by Age</h1>
       <PieChart width={1000} height={300}>
         <Pie
           cx="50%"

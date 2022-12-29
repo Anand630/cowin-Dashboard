@@ -15,7 +15,6 @@ const VaccinationCoverage = props => {
   return (
     <div className="vaccination-bar-chart-container">
       <h1 className="vaccination-heading">Vaccination Coverage</h1>
-
       <BarChart
         width={1000}
         height={300}
